@@ -2,6 +2,7 @@ package com.example.kratos
 
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,9 +25,7 @@ class ParticipantListActivity : AppCompatActivity() {
         participantArrayList = arrayListOf()
         getParticipantsData()
 
-
     }
-
     private fun getParticipantsData() {
         val eventName = intent.getStringExtra("eventName")
         databaseReference = FirebaseDatabase.getInstance().getReference("Participants")
@@ -55,7 +54,12 @@ class ParticipantListActivity : AppCompatActivity() {
                         ?.let { it1 -> participantArrayList.add(it1) }
                 }
             }
-            participantRecyclerView.adapter = ParticipantsAdapter(participantArrayList)
+           val myAdapter = ParticipantsAdapter(participantArrayList,this)
+            participantRecyclerView.adapter = myAdapter
+            val actionBar : ActionBar? = supportActionBar
+            actionBar?.setDisplayHomeAsUpEnabled(true)
+            actionBar?.setDisplayShowHomeEnabled(true)
+            actionBar?.title = eventName
         }.addOnFailureListener {
             Toast.makeText(
                 this,

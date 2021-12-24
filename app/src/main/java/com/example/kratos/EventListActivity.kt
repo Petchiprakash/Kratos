@@ -3,7 +3,7 @@ package com.example.kratos
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kratos.databinding.ActivityEventListBinding
 
@@ -13,6 +13,10 @@ class EventListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEventListBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val actionBar : ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        actionBar?.setDisplayShowHomeEnabled(true)
+        actionBar?.title = "Events"
         val listView = binding.listView
         val events = arrayOf("Live Trivia in General Session","Digital Trade Show Passport","Scavenger Hunt",
             "Name Wheel","MidCity Madness")
