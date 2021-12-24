@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kratos">
         <activity
+            android:name=".RoundCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventScannerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ThankYouActivity"
             android:exported="false" />
         <activity

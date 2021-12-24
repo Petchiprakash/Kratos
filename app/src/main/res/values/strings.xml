@@ -18,4 +18,18 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="validate_participant">Validate Participant</string>
     <string name="thanks">Thanks For Participating</string>
+    <string name="list_of_events">List of Events</string>
+    <string name="live_trivia_in_general_session">Live Trivia in General Session</string>
+    <string name="digital_trade_show_passport">Digital Trade Show Passport</string>
+    <string name="scavenger_hunt">Scavenger Hunt</string>
+    <string name="name_wheel">Name Wheel</string>
+    <string name="event_scanner">Event Scanner</string>
+    <string name="event_manager">Event Manager</string>
+    <string name="players_list">Players List</string>
+    <string name="event_1">Event 1</string>
+    <string name="marvel_game">Marvel Game</string>
+    <string name="mid_city_madness">MidCity Madness</string>
+    <string name="round_one">Round One</string>
+    <string name="round_two">Round Two</string>
+    <string name="round_three">Round Three</string>
 </resources>
