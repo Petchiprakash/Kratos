@@ -6,43 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".ExistingUserActivity">
 
-    <EditText
-        android:id="@+id/etMobileNo"
-        android:layout_width="306dp"
-        android:layout_height="48dp"
-        android:autofillHints="phone"
-        android:hint="@string/mobile_number"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="3:2"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:srcCompat="@drawable/student_03"
+        android:contentDescription="@string/image"/>
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="phone"
+        android:background="@drawable/button_background_green2"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#05ACA3"
+        android:textColorHint="#05ACA3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etEmailId"
-        android:layout_width="306dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints="emailAddress"
-        android:hint="@string/email_id"
+        android:background="@drawable/button_background_green2"
+        android:hint="@string/Email_id"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#05ACA3"
+        android:textColorHint="#05ACA3"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMobileNo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnValidate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_background_green1"
         android:text="@string/validate_participant"
+        android:textColor="#fff"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmailId"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.036" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

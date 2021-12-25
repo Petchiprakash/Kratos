@@ -22,6 +22,7 @@ class ParticipantListActivity : AppCompatActivity() {
         participantRecyclerView = binding.participantsList
         participantRecyclerView.layoutManager = LinearLayoutManager(this)
         participantRecyclerView.setHasFixedSize(true)
+        participantRecyclerView.adapter
         participantArrayList = arrayListOf()
         getParticipantsData()
 

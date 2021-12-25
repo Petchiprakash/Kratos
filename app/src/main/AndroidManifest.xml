@@ -10,7 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kratos">
+        android:theme="@style/Theme.Kratos"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
         <activity
             android:name=".RoundCheckActivity"
             android:parentActivityName=".ParticipantListActivity"
@@ -37,10 +39,12 @@
             android:exported="false" />
         <activity
             android:name=".ThankYouActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".QrCodeActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_qr_code"
             android:theme="@style/Theme.Kratos.NoActionBar" />
         <activity

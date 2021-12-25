@@ -6,7 +6,7 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="submit">Submit</string>
-    <string name="email_id">Email ID</string>
+    <string name="Email_id">Email ID</string>
     <string name="title_activity_qr_code">QrCodeActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -32,4 +32,8 @@
     <string name="round_one">Round One</string>
     <string name="round_two">Round Two</string>
     <string name="round_three">Round Three</string>
+    <string name="qr_code_scanner">QR Code Scanner</string>
+    <string name="image">image</string>
+    <string name="welcome_to_kratos">Welcome To Kratos</string>
+    <string name="rounds_check_list">Rounds Check List</string>
 </resources>
